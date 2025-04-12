@@ -178,6 +178,7 @@ nav ul {
   margin-top: 45px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 section {
@@ -269,13 +270,13 @@ section {
 .section_about {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 15px;
   background-color: #f4f4f4;
 }
 .about_p {
   line-height: 1.7;
   font-size: 17px;
-  width: 45%;
+  width: 40%;
   text-align: center;
 }
 .div_about {
@@ -596,14 +597,41 @@ footer h2 {
     font-size: 25px;
   }
   p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .contact p{
     font-size: 16px;
   }
   nav li a{
     font-size: 13px;
-  }}
+  }
+  .section_about{
+    flex-direction: column;
+  }
+}
+
+  @media (max-width: 900px) {
+    .about_p{
+      width: 100%;
+    }
+    }
+    @media (max-width: 390px) {
+
+      section{
+        margin: 20px 0 20px 0;
+      }
+      .card{
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .projects{
+        padding: 20px 0 20px 0;
+        
+      }
+    }
+    
+   
+      
   
   
 
