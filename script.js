@@ -116,14 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // --- Lógica para el cambio de tema (Modo Noche/Día) ---
+  // Lógica para el cambio de tema
   const setupThemeToggle = () => {
     const themeToggle = document.querySelector(".checkbox");
     const body = document.body;
 
-    if (!themeToggle) return; // Si no existe el botón, no hacemos nada
+    if (!themeToggle) return; 
 
-    // Función para aplicar el tema y actualizar el estado del checkbox
+    
     const applyTheme = (theme) => {
       if (theme === "light") {
         body.classList.add("light-mode");
@@ -134,11 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Al cargar la página, comprueba si hay un tema guardado y lo aplica
-    const savedTheme = localStorage.getItem("theme") || "dark"; // 'dark' es el predeterminado
+    
+    const savedTheme = localStorage.getItem("theme") || "dark"; 
     applyTheme(savedTheme);
 
-    // Añade el listener al interruptor para cambiar el tema al hacer clic
+    
     themeToggle.addEventListener("change", () => {
       const newTheme = themeToggle.checked ? "light" : "dark";
       body.classList.toggle("light-mode", themeToggle.checked);
