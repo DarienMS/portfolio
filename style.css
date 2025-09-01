@@ -1,5 +1,5 @@
 :root{
-  /* Tema Oscuro (Predeterminado) */
+ 
   --bg-color: #3b3a3a;
   --text-color: #ffffff;
   --muted-color: #c2bebe;
@@ -21,7 +21,7 @@
 }
 
 body.light-mode {
-  /* Tema Claro (se activa con JS) */
+ 
   --bg-color: #ffffff;
   --text-color: #1c1e21;
   --muted-color: #65676b;
