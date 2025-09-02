@@ -288,7 +288,7 @@ body.modal-open {
 }
 
 .card-body p {
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   line-height: 1.5;
   color: var(--card-p-color);
 }
